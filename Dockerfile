@@ -6,5 +6,5 @@ RUN apt-get -y update
 RUN apt-get -y install nginx
 COPY test_pkg /catkin_ws/src
 RUN cd /catkin_ws && \
-    ./opt/ros/noetic/setup.sh && \
+    . /opt/ros/noetic/setup.sh && \
     catkin_make 
